@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/home"
+     android:title="HOME"
+     app:showAsAction="never"/>
+
+    <item android:id="@+id/seedboxplan"
+        android:title="SEEDBOX PLAN"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/uc"
+        android:title="PUBG UC"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/COC"
+            android:title="ClASH OF CLAN GEMS"
+            app:showAsAction="never" />
+
+
+
+
+</menu>
