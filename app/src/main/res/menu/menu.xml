@@ -1,22 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_home"
+            android:title="HOME"
+            android:checked="true"
+            android:icon="@drawable/home_24" />
 
-    <item android:id="@+id/home"
-     android:title="HOME"
-     app:showAsAction="never"/>
+        <item android:id="@+id/nav_seedboxplan"
+            android:title="SEEDBOX PLAN"
+            android:icon="@drawable/seedbox"/>
 
-    <item android:id="@+id/seedboxplan"
-        android:title="SEEDBOX PLAN"
-        app:showAsAction="never"/>
+        <item android:id="@+id/nav_uc"
+            android:title="PUBG UC"
+            android:icon="@drawable/ic_baseline_videogame_asset_24"/>
 
-    <item android:id="@+id/uc"
-        android:title="PUBG UC"
-        app:showAsAction="never"/>
-
-    <item android:id="@+id/COC"
+        <item android:id="@+id/nav_COC"
             android:title="ClASH OF CLAN GEMS"
-            app:showAsAction="never" />
+            android:icon="@drawable/ic_baseline_videogame_asset_24"/>
+    </group>
+
 
 
 
