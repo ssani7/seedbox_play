@@ -20,6 +20,13 @@
         <item android:id="@+id/nav_COC"
             android:title="ClASH OF CLAN GEMS"
             android:icon="@drawable/ic_baseline_videogame_asset_24"/>
+
+        <item android:id="@+id/nav_bdt"
+            android:title="Convert to BDT"
+            android:icon="@drawable/home_24"/>
+        <item android:id="@+id/nav_btc"
+            android:title="Convert to BTC"
+            android:icon="@drawable/home_24"/>
     </group>
 
 

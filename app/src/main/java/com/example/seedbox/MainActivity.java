@@ -10,6 +10,9 @@ import androidx.fragment.app.Fragment;
 
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ViewFlipper;
 
 import com.example.seedbox.R;
 import com.google.android.material.navigation.NavigationView;
@@ -17,13 +20,15 @@ import com.google.android.material.navigation.NavigationView;
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     private DrawerLayout drawer;
     private Toolbar toolbar;
-
+    ViewFlipper viewFlipper;
+    Button button;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
 
         drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
@@ -42,6 +47,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+        viewFlipper = findViewById(R.id.view_flipper);
+
         switch (menuItem.getItemId()){
             case R.id.nav_home:
                 getSupportFragmentManager().beginTransaction().replace(R.id.frag_home,
@@ -59,6 +66,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 getSupportFragmentManager().beginTransaction().replace(R.id.frag_home,
                         new PUBGUC()).commit();
                 break;
+            case R.id.nav_bdt:
+                viewFlipper.setDisplayedChild(1);
+                break;
+            case R.id.nav_btc:
+                viewFlipper.setDisplayedChild(2);
+                break;
+
         }
         drawer.closeDrawer(GravityCompat.START);
         return true;
@@ -72,4 +86,5 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             super.onBackPressed();
         }
     }
+
 }
