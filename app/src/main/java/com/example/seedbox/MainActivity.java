@@ -14,6 +14,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ViewFlipper;
 
+
 import com.example.seedbox.R;
 import com.google.android.material.navigation.NavigationView;
 
@@ -22,6 +23,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private Toolbar toolbar;
     ViewFlipper viewFlipper;
     Button button;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,6 +45,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 new Home()).commit();
         navigationView.setCheckedItem(R.id.nav_home);
         }
+
     }
 
     @Override
