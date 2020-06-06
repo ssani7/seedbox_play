@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private DrawerLayout drawer;
     private Toolbar toolbar;
     ViewFlipper viewFlipper;
-    Button button, seedbox ;
+    Button button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,14 +63,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             case R.id.nav_seedboxplan:
                 getSupportFragmentManager().beginTransaction().replace(R.id.frag_home,
                         new seedboxsection()).commit();
-                break;
-            case R.id.nav_COC:
-                getSupportFragmentManager().beginTransaction().replace(R.id.frag_home,
-                        new coc()).commit();
-                break;
-            case R.id.nav_uc:
-                getSupportFragmentManager().beginTransaction().replace(R.id.frag_home,
-                        new PUBGUC()).commit();
                 break;
             case R.id.nav_bdt:
                 viewFlipper.setDisplayedChild(1);
