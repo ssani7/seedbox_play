@@ -10,11 +10,21 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+
 public class seedboxsection extends Fragment {
+    private AdView maddie;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.activity_seedboxsection, container, false);
+        View v = inflater.inflate(R.layout.activity_seedboxsection, container, false);
+        maddie = v.findViewById(R.id.adView);
+        MobileAds.initialize(getActivity(), "ca-app-pub-5024069063645891~5346190944");
+        AdRequest adRequest = new AdRequest.Builder().build();
+        maddie.loadAd(adRequest);
+        return v;
     }
 }

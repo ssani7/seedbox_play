@@ -35,7 +35,7 @@ public class Home extends Fragment {
         });
 
         maddie = v.findViewById(R.id.adView);
-        MobileAds.initialize(getActivity(), "ca-app-pub-3940256099942544~3347511713");
+        MobileAds.initialize(getActivity(), "ca-app-pub-5024069063645891~5346190944");
         AdRequest adRequest = new AdRequest.Builder().build();
         maddie.loadAd(adRequest);
         return v;

@@ -85,10 +85,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public void onBackPressed() {
         if (drawer.isDrawerOpen(GravityCompat.START)){
             drawer.closeDrawer(GravityCompat.START);
-        }else if ((getSupportFragmentManager().getBackStackEntryCount() > 0) ||
-                (viewFlipper.getDisplayedChild() == 1) || (viewFlipper.getDisplayedChild() == 2) ) {
+
+        }else if ((viewFlipper.getDisplayedChild() == 1) || (viewFlipper.getDisplayedChild() == 2) ) {
             viewFlipper.setDisplayedChild(0);
-            getSupportFragmentManager().popBackStack();
         }else {
             super.onBackPressed();
         }
