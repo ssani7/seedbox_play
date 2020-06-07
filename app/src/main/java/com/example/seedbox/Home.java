@@ -11,8 +11,14 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+
 public class Home extends Fragment {
     Button button;
+    private AdView maddie;
+    View v;
 
     @Nullable
     @Override
@@ -28,6 +34,10 @@ public class Home extends Fragment {
             }
         });
 
+        maddie = v.findViewById(R.id.adView);
+        MobileAds.initialize(getActivity(), "ca-app-pub-3940256099942544~3347511713");
+        AdRequest adRequest = new AdRequest.Builder().build();
+        maddie.loadAd(adRequest);
         return v;
     }
 }

@@ -28,7 +28,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private Toolbar toolbar;
     ViewFlipper viewFlipper;
     Button button;
-    private AdView maddie;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,46 +36,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        MobileAds.initialize(this, "ca-app-pub-3940256099942544~3347511713");
-        maddie = findViewById(R.id.adView);
-        AdRequest adRequest = new AdRequest.Builder().build();
-        maddie.loadAd(adRequest);
-
-        maddie.setAdListener(new AdListener() {
-            @Override
-            public void onAdLoaded() {
-                // Code to be executed when an ad finishes loading.
-            }
-
-            @Override
-            public void onAdFailedToLoad(int errorCode) {
-                // Code to be executed when an ad request fails.
-            }
-
-            @Override
-            public void onAdOpened() {
-                // Code to be executed when an ad opens an overlay that
-                // covers the screen.
-            }
-
-            @Override
-            public void onAdClicked() {
-                // Code to be executed when the user clicks on an ad.
-            }
-
-            @Override
-            public void onAdLeftApplication() {
-                // Code to be executed when the user has left the app.
-            }
-
-            @Override
-            public void onAdClosed() {
-                // Code to be executed when the user is about to return
-                // to the app after tapping on an ad.
-            }
-        });
-
-
+        //navigation drawer
         drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
@@ -103,11 +63,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         switch (menuItem.getItemId()){
             case R.id.nav_home:
                 getSupportFragmentManager().beginTransaction().replace(R.id.frag_home,
-                        new Home()).commit();
+                        new Home()).addToBackStack(null).commit();
                 break;
             case R.id.nav_seedboxplan:
                 getSupportFragmentManager().beginTransaction().replace(R.id.frag_home,
-                        new seedboxsection()).commit();
+                        new seedboxsection()).addToBackStack(null).commit();
                 break;
             case R.id.nav_bdt:
                 viewFlipper.setDisplayedChild(1);
@@ -125,7 +85,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public void onBackPressed() {
         if (drawer.isDrawerOpen(GravityCompat.START)){
             drawer.closeDrawer(GravityCompat.START);
-        } else {
+        }else if ((getSupportFragmentManager().getBackStackEntryCount() > 0) ||
+                (viewFlipper.getDisplayedChild() == 1) || (viewFlipper.getDisplayedChild() == 2) ) {
+            viewFlipper.setDisplayedChild(0);
+            getSupportFragmentManager().popBackStack();
+        }else {
             super.onBackPressed();
         }
     }
