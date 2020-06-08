@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         toggle.syncState();
 
         if (savedInstanceState == null){
-        getSupportFragmentManager().beginTransaction().replace(R.id.frag_home,
+        getSupportFragmentManager().beginTransaction().add(R.id.frag_home,
                 new Home()).commit();
         navigationView.setCheckedItem(R.id.nav_home);
         }
@@ -63,11 +63,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         switch (menuItem.getItemId()){
             case R.id.nav_home:
                 getSupportFragmentManager().beginTransaction().replace(R.id.frag_home,
-                        new Home()).addToBackStack(null).commit();
+                        new Home()).commit();
                 break;
             case R.id.nav_seedboxplan:
                 getSupportFragmentManager().beginTransaction().replace(R.id.frag_home,
-                        new seedboxsection()).addToBackStack(null).commit();
+                        new seedboxsection()).commit();
                 break;
             case R.id.nav_bdt:
                 viewFlipper.setDisplayedChild(1);
@@ -88,7 +88,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         }else if ((viewFlipper.getDisplayedChild() == 1) || (viewFlipper.getDisplayedChild() == 2) ) {
             viewFlipper.setDisplayedChild(0);
-        }else {
+        }else if(getSupportFragmentManager().getBackStackEntryCount() > 0){
+            getSupportFragmentManager().popBackStack();
+        } else {
             super.onBackPressed();
         }
     }

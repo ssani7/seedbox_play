@@ -22,7 +22,7 @@ public class seedboxsection extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.activity_seedboxsection, container, false);
         maddie = v.findViewById(R.id.adView);
-        MobileAds.initialize(getActivity(), "ca-app-pub-5024069063645891~5346190944");
+        MobileAds.initialize(getActivity(), "ca-app-pub-3940256099942544~3347511713");
         AdRequest adRequest = new AdRequest.Builder().build();
         maddie.loadAd(adRequest);
         return v;
