@@ -121,6 +121,7 @@
                         android:textStyle="bold" />
 
                     <Button
+                        android:id="@+id/PKG1"
                         android:layout_width="200dp"
                         android:layout_height="50dp"
                         android:layout_gravity="center"
@@ -206,6 +207,8 @@
                         android:textStyle="bold" />
 
                     <Button
+                        android:id="@+id/PKG2"
+
                         android:layout_width="200dp"
                         android:layout_height="50dp"
                         android:layout_gravity="center"
@@ -292,6 +295,8 @@
                         android:textStyle="bold" />
 
                     <Button
+                        android:id="@+id/PKG3"
+
                         android:layout_width="200dp"
                         android:layout_height="50dp"
                         android:layout_gravity="center"
@@ -378,6 +383,8 @@
                         android:textStyle="bold" />
 
                     <Button
+                        android:id="@+id/PKG4"
+
                         android:layout_width="200dp"
                         android:layout_height="50dp"
                         android:layout_gravity="center"
@@ -465,6 +472,8 @@
                         android:textStyle="bold" />
 
                     <Button
+                        android:id="@+id/PKG5"
+
                         android:layout_width="200dp"
                         android:layout_height="50dp"
                         android:layout_gravity="center"
@@ -552,6 +561,8 @@
                         android:textStyle="bold" />
 
                     <Button
+                        android:id="@+id/PKG6"
+
                         android:layout_width="200dp"
                         android:layout_height="50dp"
                         android:layout_gravity="center"
@@ -645,6 +656,8 @@
                         android:textStyle="bold" />
 
                     <Button
+                        android:id="@+id/PKG1BD"
+
                         android:layout_width="200dp"
                         android:layout_height="50dp"
                         android:layout_gravity="center"
@@ -730,6 +743,8 @@
                         android:textStyle="bold" />
 
                     <Button
+                        android:id="@+id/PKG2BD"
+
                         android:layout_width="200dp"
                         android:layout_height="50dp"
                         android:layout_gravity="center"
@@ -816,6 +831,7 @@
                         android:textStyle="bold" />
 
                     <Button
+                        android:id="@+id/PKG3BD"
                         android:layout_width="200dp"
                         android:layout_height="50dp"
                         android:layout_gravity="center"
@@ -902,6 +918,7 @@
                         android:textStyle="bold" />
 
                     <Button
+                        android:id="@+id/PKG4BD"
                         android:layout_width="200dp"
                         android:layout_height="50dp"
                         android:layout_gravity="center"
@@ -989,6 +1006,7 @@
                         android:textStyle="bold" />
 
                     <Button
+                        android:id="@+id/PKG5BD"
                         android:layout_width="200dp"
                         android:layout_height="50dp"
                         android:layout_gravity="center"
@@ -1076,6 +1094,7 @@
                         android:textStyle="bold" />
 
                     <Button
+                        android:id="@+id/PKG6BD"
                         android:layout_width="200dp"
                         android:layout_height="50dp"
                         android:layout_gravity="center"
@@ -1169,6 +1188,7 @@
                         android:textStyle="bold" />
 
                     <Button
+                        android:id="@+id/PKG1BC"
                         android:layout_width="200dp"
                         android:layout_height="50dp"
                         android:layout_gravity="center"
@@ -1254,6 +1274,7 @@
                         android:textStyle="bold" />
 
                     <Button
+                        android:id="@+id/PKG2BC"
                         android:layout_width="200dp"
                         android:layout_height="50dp"
                         android:layout_gravity="center"
@@ -1340,6 +1361,7 @@
                         android:textStyle="bold" />
 
                     <Button
+                        android:id="@+id/PKG3BC"
                         android:layout_width="200dp"
                         android:layout_height="50dp"
                         android:layout_gravity="center"
@@ -1426,6 +1448,7 @@
                         android:textStyle="bold" />
 
                     <Button
+                        android:id="@+id/PKG4BC"
                         android:layout_width="200dp"
                         android:layout_height="50dp"
                         android:layout_gravity="center"
@@ -1513,6 +1536,7 @@
                         android:textStyle="bold" />
 
                     <Button
+                        android:id="@+id/PKG5BC"
                         android:layout_width="200dp"
                         android:layout_height="50dp"
                         android:layout_gravity="center"
@@ -1600,6 +1624,7 @@
                         android:textStyle="bold" />
 
                     <Button
+                        android:id="@+id/PKG6BC"
                         android:layout_width="200dp"
                         android:layout_height="50dp"
                         android:layout_gravity="center"
