@@ -61,7 +61,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:text="1TB SeedBox at $9.99"
+                        android:text="300GB SeedBox at $5.99"
                         android:textColor="#fff"
                         android:textSize="25sp"
                         android:textStyle="bold" />
@@ -70,7 +70,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:text="1Gbps connection"
+                        android:text="100mbps connection"
                         android:textColor="#fff"
                         android:textSize="20sp"
                         android:textStyle="bold" />
@@ -79,16 +79,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:text="3TB Bandwidth"
-                        android:textColor="#fff"
-                        android:textSize="20sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:text="1TB HDD storage"
+                        android:text="300 GB HDD storage"
                         android:textColor="#fff"
                         android:textSize="20sp"
                         android:textStyle="bold" />
@@ -120,11 +111,28 @@
                         android:textSize="20sp"
                         android:textStyle="bold" />
 
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Unmetered Bandwidth"
+                        android:textColor="#fff"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
                     <Button
+                        android:id="@+id/PKG1"
                         android:layout_width="200dp"
                         android:layout_height="50dp"
                         android:layout_gravity="center"
                         android:text="Click to buy" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
 
                     <TextView
                         android:layout_width="match_parent"
@@ -135,12 +143,6 @@
                         android:textColor="#fff"
                         android:textSize="20sp"
                         android:textStyle="bold" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
 
                     <TextView
                         android:layout_width="match_parent"
@@ -206,6 +208,8 @@
                         android:textStyle="bold" />
 
                     <Button
+                        android:id="@+id/PKG2"
+
                         android:layout_width="200dp"
                         android:layout_height="50dp"
                         android:layout_gravity="center"
@@ -292,6 +296,8 @@
                         android:textStyle="bold" />
 
                     <Button
+                        android:id="@+id/PKG3"
+
                         android:layout_width="200dp"
                         android:layout_height="50dp"
                         android:layout_gravity="center"
@@ -378,6 +384,8 @@
                         android:textStyle="bold" />
 
                     <Button
+                        android:id="@+id/PKG4"
+
                         android:layout_width="200dp"
                         android:layout_height="50dp"
                         android:layout_gravity="center"
@@ -465,6 +473,8 @@
                         android:textStyle="bold" />
 
                     <Button
+                        android:id="@+id/PKG5"
+
                         android:layout_width="200dp"
                         android:layout_height="50dp"
                         android:layout_gravity="center"
@@ -552,19 +562,14 @@
                         android:textStyle="bold" />
 
                     <Button
+                        android:id="@+id/PKG6"
+
                         android:layout_width="200dp"
                         android:layout_height="50dp"
                         android:layout_gravity="center"
                         android:text="Click to buy" />
 
                 </LinearLayout>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -576,7 +581,7 @@
                         android:layout_height="50dp"
                         android:background="@color/colorAccent"
                         android:gravity="center"
-                        android:text="SeedBox PKG1"
+                        android:text="SeedBox PKG7"
                         android:textColor="#fff"
                         android:textSize="20sp"
                         android:textStyle="bold" />
@@ -585,7 +590,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:text="1TB SeedBox at 848BDT"
+                        android:text="1TB SeedBox at $9.99"
                         android:textColor="#fff"
                         android:textSize="25sp"
                         android:textStyle="bold" />
@@ -645,10 +650,107 @@
                         android:textStyle="bold" />
 
                     <Button
+                        android:id="@+id/PKG7"
                         android:layout_width="200dp"
                         android:layout_height="50dp"
                         android:layout_gravity="center"
                         android:text="Click to buy" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/colorAccent"
+                        android:gravity="center"
+                        android:text="SeedBox PKG1"
+                        android:textColor="#fff"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="300GB SeedBox at 500BDT"
+                        android:textColor="#fff"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="100mbps connection"
+                        android:textColor="#fff"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="300 GB HDD storage"
+                        android:textColor="#fff"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Rutorrent"
+                        android:textColor="#fff"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Payment Method – Bkash,Bitcoin,Perfect Money"
+                        android:textColor="#fff"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="24/7/365 Tech Support"
+                        android:textColor="#fff"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Unmetered Bandwidth"
+                        android:textColor="#fff"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/PKG1BD"
+                        android:layout_width="200dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:text="Click to buy" />
+
                 </LinearLayout>
 
                 <LinearLayout
@@ -730,6 +832,8 @@
                         android:textStyle="bold" />
 
                     <Button
+                        android:id="@+id/PKG2BD"
+
                         android:layout_width="200dp"
                         android:layout_height="50dp"
                         android:layout_gravity="center"
@@ -816,6 +920,7 @@
                         android:textStyle="bold" />
 
                     <Button
+                        android:id="@+id/PKG3BD"
                         android:layout_width="200dp"
                         android:layout_height="50dp"
                         android:layout_gravity="center"
@@ -902,6 +1007,7 @@
                         android:textStyle="bold" />
 
                     <Button
+                        android:id="@+id/PKG4BD"
                         android:layout_width="200dp"
                         android:layout_height="50dp"
                         android:layout_gravity="center"
@@ -989,6 +1095,7 @@
                         android:textStyle="bold" />
 
                     <Button
+                        android:id="@+id/PKG5BD"
                         android:layout_width="200dp"
                         android:layout_height="50dp"
                         android:layout_gravity="center"
@@ -1076,19 +1183,13 @@
                         android:textStyle="bold" />
 
                     <Button
+                        android:id="@+id/PKG6BD"
                         android:layout_width="200dp"
                         android:layout_height="50dp"
                         android:layout_gravity="center"
                         android:text="Click to buy" />
 
                 </LinearLayout>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -1100,7 +1201,7 @@
                         android:layout_height="50dp"
                         android:background="@color/colorAccent"
                         android:gravity="center"
-                        android:text="SeedBox PKG1"
+                        android:text="SeedBox PKG7"
                         android:textColor="#fff"
                         android:textSize="20sp"
                         android:textStyle="bold" />
@@ -1109,7 +1210,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:text="1TB SeedBox at 0.00106 BTC"
+                        android:text="1TB SeedBox at 848BDT"
                         android:textColor="#fff"
                         android:textSize="25sp"
                         android:textStyle="bold" />
@@ -1169,10 +1270,105 @@
                         android:textStyle="bold" />
 
                     <Button
+                        android:id="@+id/PKG7BD"
                         android:layout_width="200dp"
                         android:layout_height="50dp"
                         android:layout_gravity="center"
                         android:text="Click to buy" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/colorAccent"
+                        android:gravity="center"
+                        android:text="SeedBox PKG1"
+                        android:textColor="#fff"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="300GB SeedBox at 0.00062 BTC"
+                        android:textColor="#fff"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="100mbps connection"
+                        android:textColor="#fff"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="300 GB HDD storage"
+                        android:textColor="#fff"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Rutorrent"
+                        android:textColor="#fff"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Payment Method – Bkash,Bitcoin,Perfect Money"
+                        android:textColor="#fff"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="24/7/365 Tech Support"
+                        android:textColor="#fff"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Unmetered Bandwidth"
+                        android:textColor="#fff"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/PKG1BC"
+                        android:layout_width="200dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:text="Click to buy" />
+
                 </LinearLayout>
 
                 <LinearLayout
@@ -1254,6 +1450,7 @@
                         android:textStyle="bold" />
 
                     <Button
+                        android:id="@+id/PKG2BC"
                         android:layout_width="200dp"
                         android:layout_height="50dp"
                         android:layout_gravity="center"
@@ -1340,6 +1537,7 @@
                         android:textStyle="bold" />
 
                     <Button
+                        android:id="@+id/PKG3BC"
                         android:layout_width="200dp"
                         android:layout_height="50dp"
                         android:layout_gravity="center"
@@ -1426,6 +1624,7 @@
                         android:textStyle="bold" />
 
                     <Button
+                        android:id="@+id/PKG4BC"
                         android:layout_width="200dp"
                         android:layout_height="50dp"
                         android:layout_gravity="center"
@@ -1513,6 +1712,7 @@
                         android:textStyle="bold" />
 
                     <Button
+                        android:id="@+id/PKG5BC"
                         android:layout_width="200dp"
                         android:layout_height="50dp"
                         android:layout_gravity="center"
@@ -1600,11 +1800,98 @@
                         android:textStyle="bold" />
 
                     <Button
+                        android:id="@+id/PKG6BC"
                         android:layout_width="200dp"
                         android:layout_height="50dp"
                         android:layout_gravity="center"
                         android:text="Click to buy" />
 
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/colorAccent"
+                        android:gravity="center"
+                        android:text="SeedBox PKG1"
+                        android:textColor="#fff"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="1TB SeedBox at 0.00106 BTC"
+                        android:textColor="#fff"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="1Gbps connection"
+                        android:textColor="#fff"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="3TB Bandwidth"
+                        android:textColor="#fff"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="1TB HDD storage"
+                        android:textColor="#fff"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Rutorrent"
+                        android:textColor="#fff"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Payment Method – Bkash,Bitcoin,Perfect Money"
+                        android:textColor="#fff"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="24/7/365 Tech Support"
+                        android:textColor="#fff"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/PKG7BC"
+                        android:layout_width="200dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:text="Click to buy" />
                 </LinearLayout>
 
             </LinearLayout>

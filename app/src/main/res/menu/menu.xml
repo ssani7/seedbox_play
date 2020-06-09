@@ -21,15 +21,7 @@
             android:icon="@drawable/home_24"/>
     </group>
 
-    <item android:title="More">
-        <menu>
-            <item android:id="@+id/nav_about"
-                android:title="About Seedbox"
-                android:icon="@drawable/ic_baseline_help_24"/>
 
-        </menu>
-
-    </item>
 
 
 

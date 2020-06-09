@@ -28,621 +28,80 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@color/black"
         android:layout_above="@+id/lyt">
 
         <LinearLayout
-            android:background="@color/colorPrimaryDark"
+            android:padding="16dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <ViewFlipper
-                android:id="@+id/view_flipper"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@color/black"
-                    android:orientation="vertical">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="50dp"
-                                android:background="@color/colorAccent"
-                                android:gravity="center"
-                                android:text="SeedBox PKG1"
-                                android:textColor="#fff"
-                                android:textSize="20sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:gravity="center"
-                                android:text="1TB SeedBox at $9.99"
-                                android:textColor="#fff"
-                                android:textSize="25sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:gravity="center"
-                                android:text="1Gbps connection"
-                                android:textColor="#fff"
-                                android:textSize="20sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:gravity="center"
-                                android:text="3TB Bandwidth"
-                                android:textColor="#fff"
-                                android:textSize="20sp"
-                                android:textStyle="bold" />
-
-                            <Button
-                                android:id="@+id/sdpk1"
-                                android:layout_width="200dp"
-                                android:layout_height="50dp"
-                                android:layout_gravity="center"
-                                android:text="Click to Buy" />
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="50dp"
-                                android:background="@color/colorAccent"
-                                android:gravity="center"
-                                android:text="SeedBox PKG2"
-                                android:textColor="#fff"
-                                android:textSize="20sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:gravity="center"
-                                android:text="1.5TB SeedBox at $15.99"
-                                android:textColor="#fff"
-                                android:textSize="25sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:gravity="center"
-                                android:text="1Gbps connection"
-                                android:textColor="#fff"
-                                android:textSize="20sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:gravity="center"
-                                android:text="Unmetered Bandwidth"
-                                android:textColor="#fff"
-                                android:textSize="20sp"
-                                android:textStyle="bold" />
-
-                            <Button
-                                android:layout_width="200dp"
-                                android:layout_height="50dp"
-                                android:layout_gravity="center"
-                                android:text="Click to Buy" />
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="50dp"
-                                android:background="@color/colorAccent"
-                                android:gravity="center"
-                                android:text="PUBG UC PKG1"
-                                android:textColor="#fff"
-                                android:textSize="20sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:gravity="center"
-                                android:text="600+60 UC"
-                                android:textColor="#fff"
-                                android:textSize="25sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:gravity="center"
-                                android:text="at $10.99"
-                                android:textColor="#fff"
-                                android:textSize="20sp"
-                                android:textStyle="bold" />
-
-                            <Button
-                                android:layout_width="200dp"
-                                android:layout_height="50dp"
-                                android:layout_gravity="center"
-                                android:text="Click to Buy" />
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="50dp"
-                                android:background="@color/colorAccent"
-                                android:gravity="center"
-                                android:text="Clash of Clans Gems PKG 1"
-                                android:textColor="#fff"
-                                android:textSize="20sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:gravity="center"
-                                android:text="Bag of Gems(1200 Gems)"
-                                android:textColor="#fff"
-                                android:textSize="25sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:gravity="center"
-                                android:text="at $1.49"
-                                android:textColor="#fff"
-                                android:textSize="20sp"
-                                android:textStyle="bold" />
-
-                            <Button
-                                android:layout_width="200dp"
-                                android:layout_height="50dp"
-                                android:layout_gravity="center"
-                                android:text="Click to Buy" />
-
-                        </LinearLayout>
-                    </LinearLayout>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@color/black"
-                    android:orientation="vertical">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="50dp"
-                                android:background="@color/colorAccent"
-                                android:gravity="center"
-                                android:text="SeedBox PKG1"
-                                android:textColor="#fff"
-                                android:textSize="20sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:gravity="center"
-                                android:text="1TB SeedBox at BDT9.99"
-                                android:textColor="#fff"
-                                android:textSize="25sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:gravity="center"
-                                android:text="1Gbps connection"
-                                android:textColor="#fff"
-                                android:textSize="20sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:gravity="center"
-                                android:text="3TB Bandwidth"
-                                android:textColor="#fff"
-                                android:textSize="20sp"
-                                android:textStyle="bold" />
-
-                            <Button
-                                android:id="@+id/sdpk1"
-                                android:layout_width="200dp"
-                                android:layout_height="50dp"
-                                android:layout_gravity="center"
-                                android:text="Click to Buy"
-                                tools:ignore="DuplicateIds" />
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="50dp"
-                                android:background="@color/colorAccent"
-                                android:gravity="center"
-                                android:text="SeedBox PKG2"
-                                android:textColor="#fff"
-                                android:textSize="20sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:gravity="center"
-                                android:text="1.5TB SeedBox at $15.99"
-                                android:textColor="#fff"
-                                android:textSize="25sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:gravity="center"
-                                android:text="1Gbps connection"
-                                android:textColor="#fff"
-                                android:textSize="20sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:gravity="center"
-                                android:text="Unmetered Bandwidth"
-                                android:textColor="#fff"
-                                android:textSize="20sp"
-                                android:textStyle="bold" />
-
-                            <Button
-                                android:layout_width="200dp"
-                                android:layout_height="50dp"
-                                android:layout_gravity="center"
-                                android:text="Click to Buy" />
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="50dp"
-                                android:background="@color/colorAccent"
-                                android:gravity="center"
-                                android:text="PUBG UC PKG1"
-                                android:textColor="#fff"
-                                android:textSize="20sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:gravity="center"
-                                android:text="600+60 UC"
-                                android:textColor="#fff"
-                                android:textSize="25sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:gravity="center"
-                                android:text="at $10.99"
-                                android:textColor="#fff"
-                                android:textSize="20sp"
-                                android:textStyle="bold" />
-
-                            <Button
-                                android:layout_width="200dp"
-                                android:layout_height="50dp"
-                                android:layout_gravity="center"
-                                android:text="Click to Buy" />
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="50dp"
-                                android:background="@color/colorAccent"
-                                android:gravity="center"
-                                android:text="Clash of Clans Gems PKG 1"
-                                android:textColor="#fff"
-                                android:textSize="20sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:gravity="center"
-                                android:text="Bag of Gems(1200 Gems)"
-                                android:textColor="#fff"
-                                android:textSize="25sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:gravity="center"
-                                android:text="at $1.49"
-                                android:textColor="#fff"
-                                android:textSize="20sp"
-                                android:textStyle="bold" />
-
-                            <Button
-                                android:layout_width="200dp"
-                                android:layout_height="50dp"
-                                android:layout_gravity="center"
-                                android:text="Click to Buy" />
-
-                        </LinearLayout>
-                    </LinearLayout>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@color/black">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="50dp"
-                                android:background="@color/colorAccent"
-                                android:gravity="center"
-                                android:text="SeedBox PKG1"
-                                android:textColor="#fff"
-                                android:textSize="20sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:gravity="center"
-                                android:text="1TB SeedBox at btc"
-                                android:textColor="#fff"
-                                android:textSize="25sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:gravity="center"
-                                android:text="1Gbps connection"
-                                android:textColor="#fff"
-                                android:textSize="20sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:gravity="center"
-                                android:text="3TB Bandwidth"
-                                android:textColor="#fff"
-                                android:textSize="20sp"
-                                android:textStyle="bold" />
-
-                            <Button
-                                android:id="@+id/sdpk1"
-                                android:layout_width="200dp"
-                                android:layout_height="50dp"
-                                android:layout_gravity="center"
-                                android:text="Click to Buy"
-                                tools:ignore="DuplicateIds" />
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="50dp"
-                                android:background="@color/colorAccent"
-                                android:gravity="center"
-                                android:text="SeedBox PKG2"
-                                android:textColor="#fff"
-                                android:textSize="20sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:gravity="center"
-                                android:text="1.5TB SeedBox at $15.99"
-                                android:textColor="#fff"
-                                android:textSize="25sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:gravity="center"
-                                android:text="1Gbps connection"
-                                android:textColor="#fff"
-                                android:textSize="20sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:gravity="center"
-                                android:text="Unmetered Bandwidth"
-                                android:textColor="#fff"
-                                android:textSize="20sp"
-                                android:textStyle="bold" />
-
-                            <Button
-                                android:layout_width="200dp"
-                                android:layout_height="50dp"
-                                android:layout_gravity="center"
-                                android:text="Click to Buy" />
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="50dp"
-                                android:background="@color/colorAccent"
-                                android:gravity="center"
-                                android:text="PUBG UC PKG1"
-                                android:textColor="#fff"
-                                android:textSize="20sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:gravity="center"
-                                android:text="600+60 UC"
-                                android:textColor="#fff"
-                                android:textSize="25sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:gravity="center"
-                                android:text="at $10.99"
-                                android:textColor="#fff"
-                                android:textSize="20sp"
-                                android:textStyle="bold" />
-
-                            <Button
-                                android:layout_width="200dp"
-                                android:layout_height="50dp"
-                                android:layout_gravity="center"
-                                android:text="Click to Buy" />
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="50dp"
-                                android:background="@color/colorAccent"
-                                android:gravity="center"
-                                android:text="Clash of Clans Gems PKG 1"
-                                android:textColor="#fff"
-                                android:textSize="20sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:gravity="center"
-                                android:text="Bag of Gems(1200 Gems)"
-                                android:textColor="#fff"
-                                android:textSize="25sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:gravity="center"
-                                android:text="at $1.49"
-                                android:textColor="#fff"
-                                android:textSize="20sp"
-                                android:textStyle="bold" />
-
-                            <Button
-                                android:layout_width="200dp"
-                                android:layout_height="50dp"
-                                android:layout_gravity="center"
-                                android:text="Click to Buy" />
-
-
-                        </LinearLayout>
-                    </LinearLayout>
-
-                </LinearLayout>
-
-            </ViewFlipper>
-
             <TextView
-                android:id="@+id/view_more"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:gravity="center"
-                android:text="See all Packages"
                 android:textColor="#fff"
+                android:gravity="start"
+                android:textSize="35sp"
+                android:textStyle="bold|italic"
+                android:text="NEED A SEEDBOX?"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:gravity="start"
+                android:textSize="25sp"
+                android:textStyle="bold|italic"
+                android:background="@color/colorAccent"
+                android:text="We have what you are looking for!"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:gravity="start"
                 android:textSize="20sp"
                 android:textStyle="bold"
-                android:layout_marginBottom="10dp"/>
+                android:text="Never let your isp throttle you again"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:textSize="20sp"
+                android:textColor="#fff"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:text="@string/txt1"/>
+            <Button
+                android:id="@+id/sdpk1"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:layout_gravity="center"
+                android:text="See our Packages"
+                android:textColor="#fff"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:textColor="#fff"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:text="Sorry for the ads. Ads help us to keep the price as low as possible."/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/logo" />
+
 
         </LinearLayout>
 
 
     </ScrollView>
+
+
 
 
 </RelativeLayout>

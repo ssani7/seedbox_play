@@ -6,6 +6,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     android:padding="16dp"
     tools:context=".MainActivity">
 
@@ -13,36 +14,42 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="To"
+        android:textColor="#fff"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
     <EditText
         android:id="@+id/edit_text_to"
         android:layout_width="match_parent"
         android:text= "evaanrahman3@gmail.com"
         android:layout_height="wrap_content"
+        android:textColor="#fff"
         android:inputType="textEmailAddress"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Subject:"
+        android:textColor="#fff"
         android:textAppearance="@style/TextAppearance.AppCompat.Large" />
     <EditText
         android:id="@+id/edit_text_subject"
         android:layout_width="match_parent"
         android:text="Buying seedbox"
+        android:textColor="#fff"
         android:layout_height="wrap_content"
         android:inputType="textEmailSubject" />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Message:"
+        android:textColor="#fff"
         android:textAppearance="@style/TextAppearance.AppCompat.Large" />
     <EditText
         android:id="@+id/edit_text_message"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="start|top"
+        android:textColorHint="@color/white"
         android:lines="10"
-        android:text="@string/txt"/>
+        android:hint="Write the package name you want to buy"/>
     <Button
         android:id="@+id/button_send"
         android:layout_width="match_parent"
@@ -68,14 +75,16 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:gravity="center"
+        android:textColor="#fff"
         android:text="Contact us via Whatsapp"
         tools:ignore="DuplicateIds" />
     </LinearLayout>
     <TextView
         android:id="@+id/phn"
+        android:textColor="#fff"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Contact number: 01xxxxxxxx"
+        android:text="@string/phn"
         android:gravity="center"/>
 
 

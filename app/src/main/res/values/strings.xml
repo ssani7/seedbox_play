@@ -3,7 +3,18 @@
     <string name="navigation_drawer_open">Open Navigation Drawer</string>
     <string name="navigation_drawer_close">Close Navigation Drawer</string>
     <string name="txt">
-        <br>I want to buy :\n</br>
+        <br>I want to buy: \n</br>
         <br>My bkash account last digits are:\n</br>
+    </string>
+    <string name="txt1">
+        <br>We provide:\n</br>
+        <br>Stability\n</br>
+        <br>Great Networking\n</br>
+        <br>Fast Support \n</br>
+        <br>High Performance\n</br>
+    </string>
+    <string name="phn">
+        <br>Contact number: +8801812241917\n</br>
+        <br>+8801919354159\n</br>
     </string>
 </resources>
