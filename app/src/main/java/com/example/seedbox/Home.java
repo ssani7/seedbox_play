@@ -31,7 +31,7 @@ public class Home extends Fragment {
         View v = inflater.inflate(R.layout.activity_home, container, false);
 
         interstitialAd = new InterstitialAd(getActivity());
-        interstitialAd.setAdUnitId("ca-app-pub-3940256099942544/1033173712");
+        interstitialAd.setAdUnitId("ca-app-pub-5024069063645891/9299169391");
         interstitialAd.loadAd(new AdRequest.Builder().build());
         interstitialAd.setAdListener(new AdListener(){
             @Override
@@ -57,7 +57,7 @@ public class Home extends Fragment {
         });
 
         maddie = v.findViewById(R.id.adView);
-        MobileAds.initialize(getActivity(), "ca-app-pub-3940256099942544~3347511713");
+        MobileAds.initialize(getActivity(), "ca-app-pub-5024069063645891~5346190944");
         AdRequest adRequest = new AdRequest.Builder().build();
         maddie.loadAd(adRequest);
 

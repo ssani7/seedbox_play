@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".seedboxsection">
+    tools:context=".MainActivity">
 
     <LinearLayout
         android:id="@+id/lyt"
@@ -32,6 +32,7 @@
         android:background="@color/black"
         android:layout_above="@+id/lyt">
 
+
         <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -56,7 +57,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:text="300GB SeedBox at $5.99"
+                        android:text="300GB SeedBox at 500BDT"
                         android:textColor="#fff"
                         android:textSize="25sp"
                         android:textStyle="bold" />
@@ -116,7 +117,7 @@
                         android:textStyle="bold" />
 
                     <Button
-                        android:id="@+id/PKG1"
+                        android:id="@+id/PKG1BD"
                         android:layout_width="200dp"
                         android:layout_height="50dp"
                         android:layout_gravity="center"
@@ -143,7 +144,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:text="1.5TB SeedBox at $15.99"
+                        android:text="1.5TB SeedBox at 1358BDT"
                         android:textColor="#fff"
                         android:textSize="25sp"
                         android:textStyle="bold" />
@@ -203,7 +204,7 @@
                         android:textStyle="bold" />
 
                     <Button
-                        android:id="@+id/PKG2"
+                        android:id="@+id/PKG2BD"
 
                         android:layout_width="200dp"
                         android:layout_height="50dp"
@@ -230,7 +231,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:text="500GB SeedBox at $14.49"
+                        android:text="500GB SeedBox at 1225BDT"
                         android:textColor="#fff"
                         android:textSize="25sp"
                         android:textStyle="bold" />
@@ -291,8 +292,7 @@
                         android:textStyle="bold" />
 
                     <Button
-                        android:id="@+id/PKG3"
-
+                        android:id="@+id/PKG3BD"
                         android:layout_width="200dp"
                         android:layout_height="50dp"
                         android:layout_gravity="center"
@@ -319,7 +319,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:text="1TB SeedBox at $23.99"
+                        android:text="1GB SeedBox at 2030 BDT"
                         android:textColor="#fff"
                         android:textSize="25sp"
                         android:textStyle="bold" />
@@ -379,8 +379,7 @@
                         android:textStyle="bold" />
 
                     <Button
-                        android:id="@+id/PKG4"
-
+                        android:id="@+id/PKG4BD"
                         android:layout_width="200dp"
                         android:layout_height="50dp"
                         android:layout_gravity="center"
@@ -408,7 +407,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:text="2TB SeedBox at $21.99"
+                        android:text="2TB SeedBox at 1825BDT"
                         android:textColor="#fff"
                         android:textSize="25sp"
                         android:textStyle="bold" />
@@ -468,8 +467,7 @@
                         android:textStyle="bold" />
 
                     <Button
-                        android:id="@+id/PKG5"
-
+                        android:id="@+id/PKG5BD"
                         android:layout_width="200dp"
                         android:layout_height="50dp"
                         android:layout_gravity="center"
@@ -497,7 +495,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:text="1250GB SeedBox at $19.99"
+                        android:text="1250GB SeedBox at 1700BDT"
                         android:textColor="#fff"
                         android:textSize="25sp"
                         android:textStyle="bold" />
@@ -557,8 +555,7 @@
                         android:textStyle="bold" />
 
                     <Button
-                        android:id="@+id/PKG6"
-
+                        android:id="@+id/PKG6BD"
                         android:layout_width="200dp"
                         android:layout_height="50dp"
                         android:layout_gravity="center"
@@ -585,7 +582,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:text="1TB SeedBox at $9.99"
+                        android:text="1TB SeedBox at 800BDT"
                         android:textColor="#fff"
                         android:textSize="25sp"
                         android:textStyle="bold" />
@@ -645,13 +642,11 @@
                         android:textStyle="bold" />
 
                     <Button
-                        android:id="@+id/PKG7"
+                        android:id="@+id/PKG7BD"
                         android:layout_width="200dp"
                         android:layout_height="50dp"
                         android:layout_gravity="center"
                         android:text="Click to buy" />
-
-
                 </LinearLayout>
 
                 <LinearLayout
@@ -673,7 +668,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="500GB SeedBox at $8.49"
+                    android:text="500GB SeedBox at 720BDT"
                     android:textColor="#fff"
                     android:textSize="25sp"
                     android:textStyle="bold" />
@@ -733,7 +728,7 @@
                     android:textStyle="bold" />
 
                 <Button
-                    android:id="@+id/PKG8"
+                    android:id="@+id/PKG8BD"
                     android:layout_width="200dp"
                     android:layout_height="50dp"
                     android:layout_gravity="center"
@@ -743,6 +738,7 @@
             </LinearLayout>
 
             </LinearLayout>
+
 
     </ScrollView>
 

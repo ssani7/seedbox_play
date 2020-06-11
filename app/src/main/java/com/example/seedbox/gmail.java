@@ -21,6 +21,7 @@ public class gmail extends Fragment {
     private EditText mEditTextSubject;
     private EditText mEditTextMessage;
 
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {

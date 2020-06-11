@@ -10,6 +10,7 @@ import androidx.fragment.app.Fragment;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
@@ -26,7 +27,7 @@ import com.google.android.material.navigation.NavigationView;
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     private DrawerLayout drawer;
     private Toolbar toolbar;
-    ViewFlipper viewFlipper;
+    NavigationView navigationView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,7 +38,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         //navigation drawer
         drawer = findViewById(R.id.drawer_layout);
-        NavigationView navigationView = findViewById(R.id.nav_view);
+        navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer, toolbar,
                 R.string.navigation_drawer_open, R.string.navigation_drawer_close);
@@ -55,24 +56,27 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
 
 
+
+
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-        viewFlipper = findViewById(R.id.view_flipper);
 
         switch (menuItem.getItemId()){
             case R.id.nav_home:
                 getSupportFragmentManager().beginTransaction().replace(R.id.frag_home,
-                        new Home()).commit();
+                        new Home()).addToBackStack(null).commit();
                 break;
             case R.id.nav_seedboxplan:
                 getSupportFragmentManager().beginTransaction().replace(R.id.frag_home,
-                        new seedboxsection()).commit();
+                        new seedboxsection()).addToBackStack(null).commit();
                 break;
             case R.id.nav_bdt:
-                viewFlipper.setDisplayedChild(1);
+                getSupportFragmentManager().beginTransaction().replace(R.id.frag_home,
+                        new BDT()).addToBackStack(null).commit();
                 break;
             case R.id.nav_btc:
-                viewFlipper.setDisplayedChild(2);
+                getSupportFragmentManager().beginTransaction().replace(R.id.frag_home,
+                        new BTC()).addToBackStack(null).commit();
                 break;
 
         }
@@ -87,13 +91,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         }else if(getSupportFragmentManager().getBackStackEntryCount() > 0){
             getSupportFragmentManager().popBackStack();
-        }else if ((viewFlipper.getDisplayedChild() == 1) || (viewFlipper.getDisplayedChild() == 2) ) {
-            viewFlipper.setDisplayedChild(0);
+
         } else {
             super.onBackPressed();
         }
     }
-
-
-
 }
